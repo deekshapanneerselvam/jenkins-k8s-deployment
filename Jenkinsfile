@@ -2,13 +2,13 @@ pipeline {
   agent any
 
   environment {
-    DOCKER_IMAGE = 'your-dockerhub-username/node-app:latest'
+    DOCKER_IMAGE = 'deekshapanneerselvam/node-app:latest'
   }
 
   stages {
     stage('Clone') {
       steps {
-        git 'https://github.com/your-username/jenkins-k8s-deployment.git'
+        git 'https://github.com/deekshapanneerselvam/jenkins-k8s-deployment.git'
       }
     }
 
